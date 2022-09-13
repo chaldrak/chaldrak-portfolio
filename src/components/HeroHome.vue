@@ -1,7 +1,7 @@
 <template>
     <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
-            <img src="../assets/chaldrak.jpg" className="linkIcon max-w-sm rounded-lg shadow-2xl -rotate-6" />
+            <img src="../assets/chaldrak.jpg" className="linkIcon max-w-xs md:max-w-sm rounded-lg shadow-2xl -rotate-6" />
             <div>
                 <h1 className="text-5xl font-bold flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 rotate-90">
