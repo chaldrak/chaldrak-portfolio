@@ -7,6 +7,8 @@
             <a
                 v-for="item in socials"
                 :key="item.href"
+                :href="item.href"
+                target="_blank"
                 class="text-neutral"
                 :class="item.hover"
             >
@@ -29,37 +31,37 @@ import Discord from "../../node_modules/vue-material-design-icons/Discord.vue";
 
 const socials = [
     {
-        href: "",
+        href: "https://github.com/chaldrak",
         icon: Github,
         hover: "hover:text-black"
     },
     {
-        href: "",
+        href: "https://web.facebook.com/chaldrak.charliecharmis",
         icon: Facebook,
         hover: "hover:text-blue-600"
     },
     {
-        href: "",
+        href: "https://twitter.com/chaldrakus",
         icon: Twitter,
         hover: "hover:text-blue-400"
     },
     {
-        href: "",
+        href: "https://www.instagram.com/chaldrak_charlie/",
         icon: Instagram,
         hover: "hover:text-yellow-700"
     },
     {
-        href: "",
+        href: "https://www.linkedin.com/in/chaldrak-dokpa-a9b59621a/",
         icon: Linkedin,
         hover: "hover:text-blue-800"
     },
     {
-        href: "",
+        href: "#",
         icon: Youtube,
         hover: "hover:text-red-600"
     },
     {
-        href: "",
+        href: "https://discord.com/channels/@Chaldrak#2893",
         icon: Discord,
         hover: "hover:text-purple-600"
     }
