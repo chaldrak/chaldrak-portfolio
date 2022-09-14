@@ -13,9 +13,11 @@
                     v-for="item in menu"
                     :key="item.name"
                 >
-                    <a>
+                    <router-link
+                        :to="item.href"
+                    >
                         {{ item.name }}
-                    </a>
+                    </router-link>
                 </li>
                 <ThemeToggle class="md:hidden" />
             </ul>
@@ -31,9 +33,11 @@
                     v-for="item in menu"
                     :key="item.name"
                 >
-                    <a>
+                    <router-link
+                        :to="item.href"
+                    >
                         {{ item.name }}
-                    </a>
+                    </router-link>
                 </li>
             </ul>
         </div>
@@ -70,8 +74,14 @@ const menu = [
         href: "/contact"
     },
     {
-        name: "Portfolio",
-        href: "/portfolio"
+        name: "Achievements",
+        href: "/achievements"
     }
 ]
 </script>
+
+<style scoped>
+.router-link-active {
+    @apply bg-slate-300
+}
+</style>
