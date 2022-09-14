@@ -1,5 +1,5 @@
 <template>
-    <div className="navbar bg-base-100 px-10 sticky top-0 z-10">
+    <div className="navbar bg-base-100 px-4 lg:px-10 sticky top-0 z-10">
         <!-- Mobile view -->
         <div className="navbar-start">
           <div className="dropdown">
@@ -43,10 +43,10 @@
                 href="/"
                 target="_blank"
                 title="Visit my blog" 
-                className="btn space-x-2"
+                className="btn space-x-2 px-1 lg:px-3"
             >
-                <span>Geek Diary</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <span class="text-xs lg:text-sm">Geek Diary</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 lg:w-6 lg:h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>   
             </a>
