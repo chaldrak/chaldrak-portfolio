@@ -1,5 +1,5 @@
 <template>
-    <div className="navbar bg-base-100 px-4 lg:px-10 sticky top-0 z-10">
+    <div className="navbar bg-base-100 px-4 pt-4 lg:px-10">
         <!-- Mobile view -->
         <div className="navbar-start">
           <div className="dropdown">
@@ -47,7 +47,7 @@
                 href="/"
                 target="_blank"
                 title="Visit my blog" 
-                className="btn space-x-2 px-1 lg:px-3"
+                className="btn btn-primary space-x-2 px-1 lg:px-3"
             >
                 <span class="text-xs lg:text-sm">Geek Diary</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 lg:w-6 lg:h-6">
@@ -82,6 +82,6 @@ const menu = [
 
 <style scoped>
 .router-link-active {
-    @apply bg-slate-300
+    @apply bg-gray-200
 }
 </style>
