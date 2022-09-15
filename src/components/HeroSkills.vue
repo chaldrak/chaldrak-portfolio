@@ -9,7 +9,10 @@
               <div class="flow-root rounded-lg group-hover:bg-gray-50 bg-gray-100 px-6 pb-8">
                 <div class="-mt-6">
                   <div>
-                    <span class="inline-flex items-center justify-center rounded-md bg-gray-50 border-2 border-indigo-600 p-3 shadow-lg">
+                    <span 
+                      class="inline-flex items-center justify-center rounded-md bg-gray-50 border-4 border-indigo-600 p-3 shadow-lg"
+                      :class="feature.style"
+                    >
                         <img :src="feature.icon" class="h-8 w-8" :alt="feature.name" />
                     </span>
                   </div>
