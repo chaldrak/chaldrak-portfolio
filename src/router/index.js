@@ -14,12 +14,12 @@ const routes = [
     {
         name: "Contact",
         path: "/contact",
-        component: () => import ("../pages/TheHome.vue" )
+        component: () => import ("../pages/TheContacts.vue" )
     },
     {
         name: "Achievements",
         path: "/achievements",
-        component: () => import ("../pages/TheHome.vue" )
+        component: () => import ("../pages/TheAchievements.vue" )
     }
 ];
 

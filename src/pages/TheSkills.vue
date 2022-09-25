@@ -10,7 +10,7 @@
         <hr class="mt-10 border border-indigo-600">
 
         <HeroSkills :features="frontend">
-            💥 Frontend Development
+          💥 Frontend Development
         </HeroSkills>
 
         <hr class="mt-10 border border-indigo-600">
@@ -23,6 +23,12 @@
 
         <HeroSkills :features="database">
           🔥 Database and Modeling
+        </HeroSkills>
+
+        <hr class="mt-10 border border-indigo-600">
+
+        <HeroSkills :features="software">
+          🌟 Software and Others
         </HeroSkills>
       </div>
     </div>
@@ -139,27 +145,48 @@ const backend = [
 const database = [
     {
       name: 'MySql',
-      description: "Developed by Evan You, an ex-Google Employee, Vue is also an open-source, JavaScript framework.",
+      description: "Free and open-source, MySql is a widely used relational database management system (RDBMS)",
       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-      style: "group-hover:border-green-600"
+      style: "group-hover:border-orange-400"
     },
     {
       name: 'PostgreSQL',
-      description: "Angular is an open-source JavaScript framework based on TypeScript. Google runs it, and one of its main goals is to build single-page apps.",
+      description: "PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
       icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg",
-      style: "group-hover:border-green-500"
+      style: "group-hover:border-blue-900"
     },
     {
       name: 'MariaDb',
-      description: "Bootstrap is a free front-end framework for faster and easier web development.",
+      description: "MariaDB Server is one of the most popular open source relational databases. It’s made by the original developers of MySQL and guaranteed to stay open source.",
       icon: "https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg",
-      style: "group-hover:border-red-500"
+      style: "group-hover:border-gray-500"
     },
     {
       name: 'Sqlite',
-      description: "CSS, or Cascading Style Sheets, is a design language that simplifies making web pages presentable.",
+      description: "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.",
       icon: "https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg",
-      style: "group-hover:border-red-800"
+      style: "group-hover:border-blue-400"
+    }
+];
+
+const software = [
+    {
+      name: 'Photoshop',
+      description: "Photoshop is a computer-assisted retouching, processing and drawing software.",
+      icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
+      style: "group-hover:border-blue-400"
+    },
+    {
+      name: 'Postman',
+      description: "Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.",
+      icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+      style: "group-hover:border-orange-600"
+    },
+    {
+      name: 'Git',
+      description: "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
+      icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+      style: "group-hover:border-red-600"
     }
 ]
 </script>
