@@ -1,5 +1,5 @@
 <template>
-    <div class="relative bg-white py-10 sm:py-16 lg:py-24">
+    <div class="relative py-10 sm:py-16 lg:py-24">
       <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 class="text-lg font-semibold text-indigo-600">My Skills</h2>
         <hr class="mt-10 border border-indigo-600">

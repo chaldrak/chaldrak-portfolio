@@ -1,5 +1,5 @@
 <template>
-    <div className="navbar bg-base-100 px-4 pt-4 lg:px-10">
+    <div className="navbar px-4 pt-4 lg:px-10">
         <!-- Mobile view -->
         <div className="navbar-start">
           <div className="dropdown">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="store.theme">
     <GlobalNav />
     <router-view />
     <Footer />
@@ -9,11 +9,10 @@
 <script setup lang="ts">
 import GlobalNav from './components/GlobalNav.vue';
 import Footer from './components/Footer.vue';
-import { useCounterStore } from './stores/counter';
+import { useThemeStore } from './stores/theme';
 
-const store = useCounterStore()
+const store = useThemeStore()
 
-console.log(store.count)
 </script>
 
 <style scoped>

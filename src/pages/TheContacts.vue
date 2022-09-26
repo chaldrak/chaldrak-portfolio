@@ -1,6 +1,6 @@
 <template>
-  <div class="relative bg-white py-16">
-    <div class="absolute inset-x-0 top-0 hidden h-1/2 bg-white lg:block" aria-hidden="true" />
+  <div class="relative py-16">
+    <div class="absolute inset-x-0 top-0 hidden h-1/2 lg:block" aria-hidden="true" />
     <div class="mx-auto max-w-7xl bg-indigo-600 lg:bg-transparent lg:px-8">
       <div class="lg:grid lg:grid-cols-12">
         <div class="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
