@@ -20,6 +20,12 @@ const routes = [
         name: "Achievements",
         path: "/achievements",
         component: () => import ("../pages/TheAchievements.vue" )
+    },
+    {
+        name: "Not Found",
+        path: "/:pathMatch(.*)*",
+        redirect: "/",
+        // component: () => import ("../pages/TheHome.vue" )
     }
 ];
 
