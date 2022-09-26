@@ -70,12 +70,12 @@ const menu = [
         href: "/skills"
     },
     {
-        name: "Contact",
-        href: "/contact"
-    },
-    {
         name: "Achievements",
         href: "/achievements"
+    },
+    {
+        name: "Resume",
+        href: "/contact"
     }
 ]
 </script>

@@ -11,7 +11,7 @@
                 </h1>
                 <hr class="my-6">
                 <p className="pb-6">Web Developer Full-Stack <span class="text-2xl">🎊</span></p>
-                <button className="btn btn-primary laptop">Get Started</button>
+                <router-link to="/achievements" className="btn btn-primary laptop">Get Started</router-link>
             </div>
         </div>
     </div>
