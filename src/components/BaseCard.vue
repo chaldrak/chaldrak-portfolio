@@ -51,23 +51,22 @@
                   <span v-if="data.isOwner" class="badge badge-primary">Owner</span>
                   <span v-else class="badge badge-secondary">Contributor</span>
                 </DialogTitle>
-                <div class="mt-2">
+                <div class="mt-5">
                   <p class="text-sm text-gray-500">
-                    Your payment has been successfully submitted. We’ve sent you
-                    an email with all of the details of your order.
+                    {{ data.description }}
                   </p>
                   <div class="pt-5 flex justify-start space-x-4 avatar">
                     <div
                       v-for="language in data.languages"
                       :key="language"
-                      class="w-10 rounded"
+                      class="w-8 rounded"
                     >
-                      <img :src="language.src" :alt="language.alt" />
+                      <img :src="language.src" :alt="language.alt" :title="language.alt" />
                     </div>
                   </div>
                 </div>
   
-                <div class="mt-4">
+                <div>
                   <button
                     type="button"
                     class="inline-flex justify-center rounded-full border border-transparent bg-gray-900 px-1 py-1 text-sm font-medium text-gray-50 hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 absolute top-2 right-2"
@@ -77,14 +76,21 @@
                   </button>
                 </div>
                 <div class="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3">
-                  <a v-if="data.githubLink" :href="data.githubLink" type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm" @click="open = false">
-                    Deactivate
-                  </a>
-                  <a :href="data.url" type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                  <a v-if="data.githubLink" :href="data.githubLink" type="button" class="inline-flex w-full justify-center rounded-md border border-transparent bg-black px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:col-start-2 sm:text-sm"
                     target="_blank"
                   >
-                    <Export class="w-2 h-2" />
-                    <span>Visit+</span>
+                    <div class="inline-flex space-x-4">
+                      <Github class="w-4 h-4" />
+                      <span>Source Code</span>
+                    </div>
+                  </a>
+                  <a :href="data.url" type="button" class="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 sm:col-start-1 sm:mt-0 sm:text-sm"
+                    target="_blank"
+                  >
+                    <div class="inline-flex space-x-2">
+                      <span>Visit </span>
+                      <OpenInNew class="w-4 h-4" />
+                    </div>
                   </a>
                 </div>
               </DialogPanel>
@@ -106,7 +112,8 @@ import {
   DialogTitle,
 } from '@headlessui/vue';
 import WindowClose from "../../node_modules/vue-material-design-icons/WindowClose.vue"
-import Export from "../../node_modules/vue-material-design-icons/Export.vue"
+import OpenInNew from "../../node_modules/vue-material-design-icons/OpenInNew.vue"
+import Github from "../../node_modules/vue-material-design-icons/Github.vue"
 
 const props = defineProps({
   files: {
