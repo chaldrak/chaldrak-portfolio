@@ -33,7 +33,7 @@
           </div>
           <div class="relative mx-auto max-w-md space-y-6 py-12 px-4 sm:max-w-3xl sm:py-16 sm:px-6 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0">
             <h2 class="text-3xl font-bold tracking-tight text-white" id="join-heading">My Resume</h2>
-            <p class="text-lg text-white">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
+            <p class="text-lg text-white">Click the button below to download an English version of our Resume. That includes all the information about our skills and knowledge.</p>
             <a 
               class="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-200 sm:inline-block sm:w-auto" 
               :href="Resume"
