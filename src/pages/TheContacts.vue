@@ -36,7 +36,7 @@
             <p class="text-lg text-white">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
             <a 
               class="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-indigo-700 shadow-md hover:bg-gray-200 sm:inline-block sm:w-auto" 
-              href="src/assets/NEW_CV_ENGLISH (1).pdf"
+              :href="Resume"
               download="chaldrak_resume"
             >
               <div class="inline-flex space-x-2">
@@ -53,5 +53,6 @@
 
 <script setup>
 import Download from "../../node_modules/vue-material-design-icons/FileDownload.vue"
+import Resume from "/src/assets/NEW_CV_ENGLISH (1).pdf"
 
 </script>
